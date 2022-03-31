@@ -17,12 +17,13 @@ import React, {
 } from 'react';
 import icConfig from '../../../config/icConfig';
 import { columns } from './Columns';
-import Create from './Create';
+// import Create from './Create';
 import Filter from './Filter';
 import styles from './index.less';
 import Read from './Read';
 import Search from './Search';
 import Update from './Update';
+import Createmodal from './Createmodal'
 
 const App = () => {
   const actionRef = useRef<ActionType>()
@@ -62,7 +63,8 @@ const App = () => {
         toolBarRender={() => [
           <Filter />,
           <Search />,
-          <Create />
+          // <Create />,
+          <Createmodal />
         ]}
         pagination={{
           pageSize: 10,
